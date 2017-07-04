@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: f9c3df1948a744008a49d9e08f18ff99
+timeCreated: 1499172081
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: PrincesS AND THE FROG
+  fontNames:
+  - PrincesS AND THE FROG
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

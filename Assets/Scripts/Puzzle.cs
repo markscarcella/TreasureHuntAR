@@ -13,16 +13,20 @@ public class Puzzle : MonoBehaviour
     [Header("Is the puzzle complete?")]
 	public bool isComplete;
 
+    private void Awake()
+    {
+		foreach (Transform child in GetComponentsInChildren<Transform>())
+		{
+			if (child.GetComponent<MeshRenderer>() != null && child.GetComponent<Collider>() == null)
+			{
+				child.gameObject.AddComponent<MeshCollider>();
+			}
+		}
+    }
+
     // Use this for initialization
     void Start()
     {
-        foreach (Transform child in GetComponentsInChildren<Transform>())
-        {
-            if (child.GetComponent<Collider>() == null)
-            {
-                child.gameObject.AddComponent<MeshCollider>();
-            }
-        }
 
     }
 

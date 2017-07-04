@@ -16,6 +16,7 @@ public class Chest : MonoBehaviour
     void Start()
     {
         associatedPuzzle = GetComponent<Puzzle>();
+        targetRotation = hinge.rotation * Quaternion.AngleAxis(-90, transform.right);
     }
 
     // Update is called once per frame
@@ -23,6 +24,7 @@ public class Chest : MonoBehaviour
     {
         if (isOpening && !isOpen)
         {
+            Debug.Log("Opening!");
             hinge.rotation = Quaternion.Lerp(hinge.rotation, targetRotation, 5 * Time.deltaTime);
             if (hinge.rotation == targetRotation)
             {

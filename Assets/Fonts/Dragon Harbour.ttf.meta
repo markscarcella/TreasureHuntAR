@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: ec2e25c90e77a4165b4fb6f4aa9b4e27
+timeCreated: 1498988415
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Dragon Harbour
+  fontNames:
+  - Dragon Harbour
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

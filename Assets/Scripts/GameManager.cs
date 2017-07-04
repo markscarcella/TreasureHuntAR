@@ -56,7 +56,14 @@ public class GameManager : MonoBehaviour {
 
 	void Start () {
         inventory = new List<PuzzleItem>();
-		ShowMenu();
+        if (menuUI.gameObject.activeInHierarchy == true)
+        {
+            ShowMenu();
+        }
+        else
+        {
+            StartGame();
+        }
         HideInfo();
     }
 
@@ -77,15 +84,19 @@ public class GameManager : MonoBehaviour {
             else
             {
                 Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-                SendActivate(ray);
-            }        
+                RaycastHit hit;
+                if (Physics.Raycast(ray, out hit, Mathf.Infinity))
+                {
+                    hit.collider.gameObject.SendMessageUpwards("Activate", SendMessageOptions.DontRequireReceiver);
+                }
+            }
         }
     }
 
 
 	public void ShowMenu()
 	{
-		VuforiaBehaviour.Instance.enabled = false;
+        VuforiaBehaviour.Instance.enabled = false;
 		menuUI.enabled = true;
 		gameUI.enabled = false;
 		winUI.enabled = false;
@@ -111,15 +122,6 @@ public class GameManager : MonoBehaviour {
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
-
-    void SendActivate(Ray ray)
-    {
-        RaycastHit hit;
-        if (Physics.Raycast(ray, out hit, Mathf.Infinity))
-        {            
-            hit.collider.gameObject.SendMessageUpwards("Activate",SendMessageOptions.DontRequireReceiver);
-        }
-	}
 
 	public void AddToInventory(PuzzleItem item)
 	{

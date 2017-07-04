@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 0ab867ad956ba4e4eae17e3eddf4d090
+timeCreated: 1499172085
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Connie
+  fontNames:
+  - Connie
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

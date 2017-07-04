@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 5211520f2d2c344289ef82b6ac4c2631
+timeCreated: 1499172094
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Hustlers Rough Demo
+  fontNames:
+  - Hustlers Rough Demo
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

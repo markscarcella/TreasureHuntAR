@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 8afc4aa424d054a17855124649ed5e78
+timeCreated: 1498988441
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Warmonger BB
+  fontNames:
+  - Warmonger BB
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

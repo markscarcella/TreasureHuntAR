@@ -10,15 +10,20 @@ public class PuzzleItem : MonoBehaviour {
     [TextArea(3,3),Header("Write your puzzle item description here")]
     public string puzzleItemDescription;
 
-	// Use this for initialization
-	void Start () {
+    private void Awake()
+    {
 		foreach (Transform child in GetComponentsInChildren<Transform>())
 		{
-			if (child.GetComponent<Collider>() == null)
+			if (child.GetComponent<MeshRenderer>() != null && child.GetComponent<Collider>() == null)
 			{
 				child.gameObject.AddComponent<MeshCollider>();
 			}
 		}
+    }
+
+    // Use this for initialization
+    void Start () {
+
 	}
 	
 	// Update is called once per frame
