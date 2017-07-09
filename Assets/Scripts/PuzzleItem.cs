@@ -19,6 +19,7 @@ public class PuzzleItem : MonoBehaviour {
 				child.gameObject.AddComponent<MeshCollider>();
 			}
 		}
+        puzzleItemImage.texture.filterMode = FilterMode.Point;
     }
 
     // Use this for initialization
